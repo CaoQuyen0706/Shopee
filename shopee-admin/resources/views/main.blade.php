@@ -96,59 +96,12 @@
         </div>
         <div class="table-product">
 
-{{--            <?php--}}
-{{--            include('./connect_db.php');--}}
-{{--            ?>--}}
-{{--            <?php--}}
-{{--            $item_per_page = !empty($_GET['per_page']) ? $_GET['per_page'] : 10;--}}
-{{--            $current_page = !empty($_GET['page']) ? $_GET['page'] : 1;--}}
-{{--            $offset = ($current_page - 1) * $item_per_page;--}}
-{{--            $sqlsanpham = "SELECT * FROM products ORDER BY id ASC LIMIT " . $item_per_page . " OFFSET " . $offset . " ";--}}
-{{--            $pro = mysqli_query($con, $sqlsanpham);--}}
-{{--            $totalRecords = mysqli_query($con, "SELECT * FROM products ");--}}
-{{--            $totalRecords = $totalRecords->num_rows;--}}
-{{--            $totalPages = ceil($totalRecords / $item_per_page);--}}
+        @include('products.list')
 
-{{--            ?>--}}
-{{--            <?php while ($row = mysqli_fetch_array($pro)) { ?>--}}
-            <div class="table-menu-product">
-                <a href="">
-                    <div class="menu-product-content-item">
-{{--                        <img src="/template/img/<?php echo $row['image1'] ?>" alt="anh-san-pham">--}}
-                        <img alt="anh-san-pham">
-                    </div>
-                    <div class="menu-product-content-detail">
-                        <div class="menu-product-content-detail-name">
-{{--                            <span><?= $row['name'] ?></span>--}}
-                            <span>ten-san-pham</span>
-                        </div>
-                        <div class="menu-product-content-detail-price">
-{{--                            <span>đ <?= number_format($row['price'], 0, ",", ".") ?></span>--}}
-                            <span>đ gia-san-pham</span>
-                            <img src="/template/img/icons8-free-shipping-50.png" alt="anh-san-pham">
-                        </div>
-                        <div class="menu-product-content-detail-sold">
-                            <div class="menu-product-content-detail-sold-i">
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span>Đã bán 12,2k</span>
-                        </div>
-                        <div class="menu-product-content-detail-address">
-                            <span>Hà Nội</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-<!--            --><?php //} ?>
         </div>
         <div class="pagination">
             <ul class="pagination-home-product-pagination">
-                <!-- <li class="pagination-item">
+                    <li class="pagination-item">
                         <a href="#" class="pagination-item__link">
                         <i class="fas fa-angle-left" style="color:#505050;"></i>
                         </a>
@@ -181,9 +134,7 @@
                         <i class=" fas fa-angle-right" style="color:#505050;"></i>
                         </a>
                     </li> -->
-<!--                --><?php
-//                include('pagination.php');
-//                ?>
+
             </ul>
         </div>
     </div>

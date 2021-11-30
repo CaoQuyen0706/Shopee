@@ -7,7 +7,7 @@
             <th style="width: 100px"> ID </th>
             <th> Tên sản phẩm </th>
             <th> Ảnh </th>
-{{--            <th> Danh mục </th>--}}
+            <th> Danh mục </th>
             <th> Giá gốc (VND)</th>
             <th> Giá khuyến mãi (VND)</th>
             <th> Active </th>
@@ -20,7 +20,7 @@
                 <td>{{ $product->id }}</td>
                 <td>{{ $product->name }}</td>
                 <td><img src="{{ $product->thumb }}" alt="anh-san-pham" width="100px"></td>
-{{--                <td>{{ $product->menu->name }}</td>--}}
+                <td>{{ $product->menu->name }}</td>
                 <td>{{ $product->price }}</td>
                 <td>{{ $product->price_sale }}</td>
                 <td>{!! \App\Helpers\Helper::active($product->active) !!}</td>
@@ -38,6 +38,8 @@
             @endforeach
         </tbody>
     </table>
+
+    <div class="card-footer clearfix">{!! $products->links() !!}</div>
 @endsection
 
 

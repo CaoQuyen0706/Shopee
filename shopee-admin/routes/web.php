@@ -62,3 +62,5 @@ Route::middleware('auth')->group(function (){
 });
 
 Route::get('/', [\App\Http\Controllers\MainController::class, 'index']);
+
+Route::get('danh-muc/{id}-{slug}.html', [\App\Http\Controllers\MenuController::class, 'index']);
