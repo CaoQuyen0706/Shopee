@@ -12,7 +12,7 @@ class ProductService
 
         return Product::select('id', 'name', 'price', 'price_sale', 'thumb')
             ->orderByDesc('id')
-            ->limit(self::LIMIT)
+
             ->get();
     }
 }

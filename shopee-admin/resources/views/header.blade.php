@@ -99,7 +99,7 @@
     </div>
     <div class="header-bottom">
         <div class="logo">
-            <a href="">
+            <a href="/">
                 <img src="/template/img/icons8-shopee-50.png" alt="">
                 <span>Shopee</span>
             </a>

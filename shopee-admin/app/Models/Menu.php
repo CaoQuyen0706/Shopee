@@ -16,4 +16,10 @@ class Menu extends Model
         'content',
         'active'
     ];
+
+    public function Products()
+    {
+        return $this->hasMany(Product::class, 'menu_id', 'id');
+
+    }
 }

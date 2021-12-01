@@ -53,7 +53,7 @@
             <span>Sắp xếp theo</span>
             <div class="menu-sort-bar-pro-sub">
                 <ul class="menu-sort-bar-pro-sub-choose">
-                    <a href="">Phổ Biến</a>
+                    <a href="{{ request()->url() }}">Phổ Biến</a>
                 </ul>
                 <ul class="menu-sort-bar-pro-sub-choose">
                     <a href="">Mới Nhất</a>
@@ -67,10 +67,10 @@
                         <i style="color: #505050; margin-left: 115px;" class="fas fa-angle-down"></i>
                         <ul class="sub-money">
                             <li>
-                                <a href="">Giá: Thấp đến cao</a>
+                                <a href="{{ request()->fullUrlWithQuery(['price' => 'asc']) }}">Giá: Thấp đến cao</a>
                             </li>
                             <li>
-                                <a href="">Giá: Cao đến thấp</a>
+                                <a href="{{ request()->fullUrlWithQuery(['price' => 'desc']) }}">Giá: Cao đến thấp</a>
                             </li>
                         </ul>
                     </a>
@@ -96,6 +96,8 @@
         </div>
         <div class="table-product">
 
+
+        @yield('content')
         @include('products.list')
 
         </div>
