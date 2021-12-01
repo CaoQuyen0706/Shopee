@@ -171,7 +171,8 @@
             </div>
         </div>
         <div class="cart">
-            <a href=""><img src="/template/img/icons8-shopping-cart-48.png" alt=""></a>
+            <a href="" style="text-decoration: none; color: white; font-family: cursive; " >
+                <img src="/template/img/icons8-shopping-cart-48.png" alt="">{{ count(\Illuminate\Support\Facades\Session::get('carts')) }}</a>
         </div>
     </div>
 </div>

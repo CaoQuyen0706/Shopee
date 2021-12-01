@@ -101,44 +101,7 @@
 
 
         </div>
-        <div class="pagination">
-            <ul class="pagination-home-product-pagination">
-                <li class="pagination-item">
-                    <a href="#" class="pagination-item__link">
-                        <i class="fas fa-angle-left" style="color:#505050;"></i>
-                    </a>
-                </li>
 
-                <li class="pagination-item pagination-item--active">
-                    <a href="#" class="pagination-item__link">1</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#" class="pagination-item__link">2</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#" class="pagination-item__link">3</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#" class="pagination-item__link">4</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#" class="pagination-item__link">5</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#" class="pagination-item__link">...</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#" class="pagination-item__link">14</a>
-                </li>
-
-                <li class="pagination-item">
-                    <a href="#" class="pagination-item__link">
-                        <i class=" fas fa-angle-right" style="color:#505050;"></i>
-                    </a>
-                </li> -->
-
-            </ul>
-        </div>
     </div>
 </div>
 <div class="footer">
