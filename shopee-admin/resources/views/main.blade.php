@@ -96,9 +96,8 @@
         </div>
         <div class="table-product">
 
-
         @yield('content')
-        @include('products.list')
+
 
         </div>
         <div class="pagination">
