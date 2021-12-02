@@ -53,22 +53,15 @@
                         <div class="giam"><input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type="button" value="+"></div>
                     </div>
                     @if($product->price !== null)
-                    <button type="submit">Thêm sản phẩm</button>
+                    <button type="submit" style="width: 101px;
+                    height: 50px;">Thêm sản phẩm</button>
                     <input type="hidden" name="product_id" value="{{ $product->id }}">
                     @endif
                     @csrf
                 </form>
             </div>
             <div class="product-detail-content-shopping">
-                <div class="product-detail-content-shopping-cart">
-                    <a href="">
-                        <i class="fas fa-cart-plus"></i>
-                        Thêm Vào Giỏ Hàng
-                    </a>
-                </div>
-                <div class="product-detail-content-shopping-buy">
-                    <a href="">Mua Ngay</a>
-                </div>
+
             </div>
         </div>
     </div>

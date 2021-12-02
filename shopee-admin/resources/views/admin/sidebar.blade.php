@@ -75,7 +75,7 @@
                 </li>
                 <li class="nav-item">
                     {{--Cart--}}
-                    <a href="{{ route("admin/products") }}" class="nav-link">
+                    <a href="" class="nav-link">
                         <i class="fas fa-shopping-cart"></i>
                         <p>
                             Giỏ hàng
@@ -84,17 +84,17 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href= {{ route("admin/products/list") }} class="nav-link">
+                            <a href= {{ route("admin/customers") }} class="nav-link">
                                 <i class="fas fa-meteor"></i>
                                 <p>Danh sách giỏ hàng</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href= {{ route("admin/products/add") }} class="nav-link">
-                                <i class="fas fa-meteor"></i>
-                                <p>Danh sách hóa đơn</p>
-                            </a>
-                        </li>
+{{--                        <li class="nav-item">--}}
+{{--                            <a href= {{ route("admin/products/add") }} class="nav-link">--}}
+{{--                                <i class="fas fa-meteor"></i>--}}
+{{--                                <p>Danh sách hóa đơn</p>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
                     </ul>
                 </li>
             </ul>

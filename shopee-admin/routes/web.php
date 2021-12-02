@@ -56,6 +56,9 @@ Route::middleware('auth')->group(function (){
 
         #Upload
         Route::post('upload/services', [UploadController::class, 'store']);
+
+        #Cart
+        Route::get('customers', [\App\Http\Controllers\Admin\CartController::class, 'index'])->name('admin/customers');
     });
 
 
@@ -69,4 +72,5 @@ Route::post('add-cart', [\App\Http\Controllers\CartController::class, 'index']);
 Route::get('carts', [\App\Http\Controllers\CartController::class, 'show']);
 Route::post('update-cart', [\App\Http\Controllers\CartController::class, 'update']);
 Route::get('carts/delete/{id}', [\App\Http\Controllers\CartController::class, 'remove']);
+Route::post('carts', [\App\Http\Controllers\CartController::class, 'addCart']);
 

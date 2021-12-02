@@ -51,6 +51,24 @@
 
                         </div>
                     @endforeach
+                        <div style="width: margin-top: 25px;
+                                width: 1200px;
+                                height: 100px;
+                                background: #fff;
+                                margin-top: 10px">
+                            <div>
+                                <span>Họ tên: </span>
+                                <input type="text" required placeholder="Họ tên" style="border: 1px solid; border-radius: 3px ">
+                            </div>
+                            <div>
+                                <span>SĐT: </span>
+                                <input type="text" required placeholder="SĐT" style="border: 1px solid; border-radius: 3px ">
+                            </div>
+                            <div>
+                                <span>Địa chỉ: </span>
+                                <input type="text" placeholder="Địa chỉ" style="border: 1px solid; border-radius: 3px ">
+                            </div>
+                        </div>
                     <div class="mid-thanhtoan">
 
                         <div class="mid-thanhtoan3">
@@ -63,12 +81,14 @@
                             <div class="mid-thanhtoan3-right">
                                 <div class="tongthanhtoan">Tổng:</div>
                                 <div class="Tien" style="font-size: 20px">₫{{ number_format($total, 0, '', '.') }}</div>
-                                <input type="submit" value="Mua Hàng" formaction="/update-cart">
+                                <input type="submit" value="Mua Hàng" formaction="/carts">
                                 <p style="color: white">|</p>
                                 <input type="submit" value="Cập Nhật" formaction="/update-cart">
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
 
